@@ -5,6 +5,7 @@ This project simulates an E-Commerce checkout component. Instead of using hardco
 
 ### 📐 Structural Layout
 #### Order Checkout Example
+
 ```mermaid
 classDiagram
     class OrderCheckoutContext {
@@ -25,10 +26,11 @@ classDiagram
     OrderCheckoutContext --> IShippingStrategy : maintains reference
     FedexShippingStrategy ..|> IShippingStrategy : implements
     UpsShippingStrategy ..|> IShippingStrategy : implements
+```
 
 ---
-
 ### DuckUSim
+
 ```mermaid
 classDiagram
     %% Context Tier (Client)
@@ -80,4 +82,4 @@ classDiagram
     %% Composition Anchors (HAS-A)
     Duck --> FlyBehavior : HAS-A (flyBehavior)
     Duck --> QuackBehavior : HAS-A (quackBehavior)
-
+```
